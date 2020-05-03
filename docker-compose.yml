@@ -29,6 +29,7 @@ services:
     volumes:
       - ./addons:/mnt/extra-addons
       - ./etc:/etc/odoo
+      - ./var:/var/lib/odoo
     restart: always
 
   pgadmin:
