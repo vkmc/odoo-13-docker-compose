@@ -1,9 +1,14 @@
 # Usage
 
+# TODO(vkmc) We shouldn't grant 777 permissions to these folders, we should start containers
+# with non-root users. That require modifying the base image and creating new images with the
+# user information in place. For a dev env, though, this works
+
 Change the folder permission to make sure that the container is able to access the directory:
 ```
 $ sudo chmod -R 777 addons
 $ sudo chmod -R 777 etc
+$ sudo chmod -R 777 var
 ```
 
 Start the container:
